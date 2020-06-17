@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #ffc72c, #ff2c9d);
+}
+
+.container {
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.balance {
+  text-align: center;
+  font-size: 40px;
+  margin-top: auto;
+}
+
+.acc-sum-container {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+  background-color: aqua;
+}
+
+.acc-sum-container > div {
+  flex: 1;
+}
