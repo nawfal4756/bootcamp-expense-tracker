@@ -4,6 +4,7 @@ body {
   align-items: center;
   justify-content: center;
   background: linear-gradient(45deg, #ffc72c, #ff2c9d);
+  height: 100%;
 }
 
 .container {
@@ -22,6 +23,10 @@ h3 {
   text-align: center;
 }
 
+p {
+  text-align: center;
+}
+
 .balance {
   text-align: center;
   font-size: 40px;
@@ -37,4 +42,49 @@ h3 {
 
 .acc-sum-container > div {
   flex: 1;
+  text-align: center;
+  border-right: 1px solid;
+}
+
+.plus {
+  color: green
+}
+
+.minus {
+  color: red;
+}
+
+.transaction-list {
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.transaction-list li.plus {
+  border-right: 5px solid green;
+}
+
+.transaction-list li.minus {
+  border-right: 5px solid red;
+}
+
+.form-control1 {
+  text-align: center;
+  margin: auto;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control label {
+  margin-bottom: -30px;
 }

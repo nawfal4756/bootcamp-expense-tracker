@@ -4,14 +4,16 @@ export const AccountHistory = () => {
     return (
         <div>
             <h3>Account History</h3>
-            <ul>
-                <li>
+            <ul className="transaction-list">
+                <li className="plus">
                     Income
-                    <span>$1,0000</span>                    
+                    <span>$1,0000</span>
+                    <button>x</button>                    
                 </li>
-                <li>
+                <li className="minus">
                     Salary
                     <span>-$200</span>
+                    <button>x</button>
                 </li>
             </ul>
         </div>

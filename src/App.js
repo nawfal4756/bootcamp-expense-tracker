@@ -6,6 +6,7 @@ import { Header } from './components/Header'
 import { Balance } from './components/Balance'
 import { AccountSummary } from './components/AccountSummary'
 import { AccountHistory } from './components/AccountHistory'
+import { AddTransaction } from './components/AddTransaction'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Balance/>
         <AccountSummary/>
         <AccountHistory/>
+        <AddTransaction/>
       </div>
     </div>
   );
