@@ -50,6 +50,7 @@ export const AddTransaction = () => {
                         onChange={(e) => setTransactionAmount(e.target.value)}
                     />
                 </div>
+                <button type="submit" className="btn">Submit</button>
             </form>
         </div>
     )

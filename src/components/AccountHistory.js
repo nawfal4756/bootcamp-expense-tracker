@@ -8,12 +8,12 @@ export const AccountHistory = () => {
                 <li className="plus">
                     Income
                     <span>$1,0000</span>
-                    <button>x</button>                    
+                    <button className="delete-btn">x</button>                    
                 </li>
                 <li className="minus">
                     Salary
                     <span>-$200</span>
-                    <button>x</button>
+                    <button className="delete-btn">x</button>
                 </li>
             </ul>
         </div>

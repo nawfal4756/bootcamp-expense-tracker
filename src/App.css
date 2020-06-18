@@ -9,6 +9,8 @@ body {
 
 .container {
   margin: 30px auto;
+  width: 350px;
+  height: 700px;
 }
 
 h1 {
@@ -36,8 +38,9 @@ p {
 .acc-sum-container {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   background-color: aqua;
+  border-radius: 30px;
 }
 
 .acc-sum-container > div {
@@ -75,6 +78,41 @@ p {
   border-right: 5px solid red;
 }
 
+.transaction-list li.plus:hover {
+  background-color: green;
+  color: black;
+}
+
+.transaction-list li.minus:hover {
+  background-color: red;
+  color: black;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: black;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  /*opacity: 0;
+  transition: opacity 0.3s ease; */
+} 
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
 .form-control1 {
   text-align: center;
   margin: auto;
@@ -83,6 +121,12 @@ p {
 .form-control {
   display: flex;
   flex-direction: column;
+}
+
+.btn {
+  width: 350px;
+  height: 30px;
+  margin: 30px 0px 30px 0px;
 }
 
 .form-control label {
