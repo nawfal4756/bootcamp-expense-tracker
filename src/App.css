@@ -88,28 +88,18 @@ p {
   color: black;
 }
 
-.btn:focus,
-.delete-btn:focus {
-  outline: 0;
+.del-btn {
+  cursor: pointer;
+  position: absolute;
+  left: 15vw;
+  opacity: 1;
+  background-color: white;
+  border: none;
+  color: black;
+  opacity: 0;
 }
 
-.delete-btn {
-  cursor: pointer;
-  background-color: black;
-  border: 0;
-  color: #fff;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 2px 5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-100%, -50%);
-  /*opacity: 0;
-  transition: opacity 0.3s ease; */
-} 
-
-.list li:hover .delete-btn {
+.list li:hover .del-btn {
   opacity: 1;
 }
 

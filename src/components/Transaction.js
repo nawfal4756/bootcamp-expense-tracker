@@ -12,7 +12,7 @@ export const Transaction = ({ transaction }) => {
             
             {transaction.description}
             <span>{sign}${transaction.amount}</span>
-            <button onClick={() => deleteTransaction(transaction.id)} className="">x</button>
+            <button onClick={() => deleteTransaction(transaction.id)} className="del-btn">x</button>
         </li>
     )
 }
