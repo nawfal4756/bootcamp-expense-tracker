@@ -90,16 +90,15 @@ p {
 
 .del-btn {
   cursor: pointer;
-  position: absolute;
-  left: 15vw;
-  opacity: 1;
   background-color: white;
   border: none;
   color: black;
   opacity: 0;
+  padding: 2px 5px;
+  transition: opacity 0.3s ease;
 }
 
-.list li:hover .del-btn {
+.transaction-list li:hover .del-btn {
   opacity: 1;
 }
 
@@ -117,6 +116,7 @@ p {
   width: 350px;
   height: 30px;
   margin: 30px 0px 30px 0px;
+  border-radius: 20px;
 }
 
 .form-control label {
