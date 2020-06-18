@@ -2,12 +2,7 @@ import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 // Initial State
 const initialState = {
-    transactions: [
-        { id: 1, transactionType: 'income', description: 'Main Income', amount: 2000 },
-        { id: 2, transactionType: 'expense', description: 'Flowers', amount: 300 },
-        { id: 3, transactionType: 'income', description: 'Main Income 2', amount: 3000 },
-        { id: 4, transactionType: 'expense', description: 'Dinner', amount: 200 }
-    ]
+    transactions: []
 }
 
 // Create Context
