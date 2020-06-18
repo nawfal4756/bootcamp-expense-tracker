@@ -8,9 +8,11 @@ import { AccountSummary } from './components/AccountSummary'
 import { AccountHistory } from './components/AccountHistory'
 import { AddTransaction } from './components/AddTransaction'
 
+import { GlobalProvider } from './context/GlobalState'
+
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Header/>
       <div className="container">
         <Balance/>
@@ -18,7 +20,7 @@ function App() {
         <AccountHistory/>
         <AddTransaction/>
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 

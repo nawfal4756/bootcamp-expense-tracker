@@ -1,15 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { GlobalContext } from '../context/GlobalState';
+
 
 export const AddTransaction = () => {
+    const { addTransaction } = useContext(GlobalContext);
 
     const [transactionType, setTransactionType] = useState('income');
     const [description, setDescription] = useState('');
-    const [transactionAmount, setTransactionAmount] = useState('');
+    const [amount, setAmount] = useState('');
+
+    const onSubmit = e => {
+        e.preventDefault();
+
+        const newTransaction = {
+            id: Math.floor(Math.random() * 100000000),
+            transactionType,
+            description,
+            amount: parseFloat(amount)
+        }
+
+        addTransaction(newTransaction);
+
+    }
 
     return (
         <div>
             <h3>Add Transaction</h3>
-            <form>
+            <form onSubmit={onSubmit}>
                 <div className="form-control1">
                     Select Transaction Type
                     <br/>
@@ -46,8 +63,8 @@ export const AddTransaction = () => {
                         </p>
                     </label>
                     <br/>
-                    <input id="trans-amount" type="number" name="trans-amount" required="required" value={transactionAmount} placeholder="Enter Transaction Amount" 
-                        onChange={(e) => setTransactionAmount(e.target.value)}
+                    <input id="trans-amount" type="number" name="trans-amount" required="required" value={amount} placeholder="Enter Transaction Amount" 
+                        onChange={(e) => setAmount(e.target.value)}
                     />
                 </div>
                 <button type="submit" className="btn">Submit</button>
