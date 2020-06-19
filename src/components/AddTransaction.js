@@ -67,7 +67,7 @@ export const AddTransaction = () => {
                         onChange={(e) => setAmount(e.target.value)}
                     />
                 </div>
-                <button type="submit" className="btn">Submit</button>
+                <button type="submit" className="btn">Add Transaction</button>
             </form>
         </div>
     )
